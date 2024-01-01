@@ -12,10 +12,59 @@ code {
     monospace;
 }
 
-.ap-tech{
+.ap-tech {
   font-family: 'Black Ops One', sans-serif;
 }
 
-.navbar{
-  font-family: "Playfair Display",  sans-serif;
+.navbar {
+  font-family: "Playfair Display", sans-serif;
+}
+
+.essentials {
+  font-family: "Merriweather", sans-serif;
+}
+
+.essentials-body {
+  font-family: "Lobster Two", sans-serif;
+}
+
+.flash-sale-animation {
+  animation-duration: 1s;
+  animation-name: flash;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes flash {
+  from {
+    color: black;
+  }
+
+  50% {
+    color: red
+  }
+
+  to {
+    color: black;
+  }
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: yellowgreen;
+}
+
+/* selected link */
+a:active {
+  color: lightcoral;
 }
