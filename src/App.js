@@ -38,7 +38,7 @@ function App() {
       <div className="static z-0 pb-[calc(6vh)] px-2 hidden">
         <FromTheCEO />
       </div>
-      <div className="flex flex-col lg:flex-row pb-[calc(6vh)] z-0 w-full h-full justify-center gap-6 px-2">
+      <div className="hidden lg:flex lg:flex-row pb-[calc(6vh)] z-0 w-full h-full justify-center gap-6 px-2">
         <div className="static z-0 px-2 h-full w-full rounded-2xl">
           <Contact />
         </div>
@@ -49,7 +49,7 @@ function App() {
       <div className="static z-0 pb-[calc(6vh)] px-2 hidden">
         <ContactForm />
       </div>
-      <div className="static z-0 pb-[calc(6vh)] px-2">
+      <div className="static z-0 pb-[calc(6vh)] px-2 bg-gray-300">
         <Footer />
       </div>
     </div>
