@@ -28,7 +28,7 @@ const HeaderAnnouncement = () => {
   }, 5000);
 
 
-  return <div>{announcementChange()}</div>;
+  return <div className="bg-black text-white">{announcementChange()}</div>;
 };
 
 export default HeaderAnnouncement;

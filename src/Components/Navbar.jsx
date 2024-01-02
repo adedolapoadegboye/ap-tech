@@ -4,6 +4,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { FiMenu } from "react-icons/fi";
 import Menu from "../Subcomponents/Menu";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -12,16 +13,107 @@ const Navbar = () => {
     setMenuOpen(!isMenuOpen);
   };
   return (
-    <div className="flex justify-between px-[calc(5vw)] py-[calc(2vh)]">
+    <div className="flex justify-between px-[calc(5vw)] py-[calc(2vh)] border-b-2 border-black">
       <div className="flex ap-tech text-xl md:text-3xl lg:text-4xl text-slate-900">
         <h1>AP Tech</h1>
       </div>
       <div className="navbar hidden lg:flex gap-x-10 font-bold">
-        <button className="">iPhones</button>
-        <button className="">Apple Watch</button>
-        <button className="">Mac</button>
-        <button className="">Earpods</button>
-        <button className="">Accessories</button>
+      <NavLink
+          to="/"
+          style={({ isActive, isPending, isTransitioning }) => {
+            return {
+              fontWeight: isActive ? "bold" : "",
+              color: isActive ? "green" : "black",
+              viewTransitionName: isTransitioning ? "slide" : "",
+            };
+          }}
+        >
+          Home
+        </NavLink>{" "}
+        <NavLink
+          to="/iphone"
+          style={({ isActive, isPending, isTransitioning }) => {
+            return {
+              fontWeight: isActive ? "bold" : "",
+              color: isActive ? "green" : "black",
+              viewTransitionName: isTransitioning ? "slide" : "",
+            };
+          }}
+        >
+          iPhones
+        </NavLink>{" "}
+        <NavLink
+          to="/iwatch"
+          style={({ isActive, isPending, isTransitioning }) => {
+            return {
+              fontWeight: isActive ? "bold" : "",
+              color: isActive ? "green" : "black",
+              viewTransitionName: isTransitioning ? "slide" : "",
+            };
+          }}
+        >
+          iWatch
+        </NavLink>{" "}
+        <NavLink
+          to="/mac"
+          style={({ isActive, isPending, isTransitioning }) => {
+            return {
+              fontWeight: isActive ? "bold" : "",
+              color: isActive ? "green" : "black",
+              viewTransitionName: isTransitioning ? "slide" : "",
+            };
+          }}
+        >
+          Mac
+        </NavLink>{" "}
+        <NavLink
+          to="/earpod"
+          style={({ isActive, isPending, isTransitioning }) => {
+            return {
+              fontWeight: isActive ? "bold" : "",
+              color: isActive ? "green" : "black",
+              viewTransitionName: isTransitioning ? "slide" : "",
+            };
+          }}
+        >
+          Earpods
+        </NavLink>{" "}
+        <NavLink
+          to="/accessory"
+          style={({ isActive, isPending, isTransitioning }) => {
+            return {
+              fontWeight: isActive ? "bold" : "",
+              color: isActive ? "green" : "black",
+              viewTransitionName: isTransitioning ? "slide" : "",
+            };
+          }}
+        >
+          Accessories
+        </NavLink>{" "}
+        <NavLink
+          to="/others"
+          style={({ isActive, isPending, isTransitioning }) => {
+            return {
+              fontWeight: isActive ? "bold" : "",
+              color: isActive ? "green" : "black",
+              viewTransitionName: isTransitioning ? "slide" : "",
+            };
+          }}
+        >
+          Others
+        </NavLink>{" "}
+        <NavLink
+          to="/about"
+          style={({ isActive, isPending, isTransitioning }) => {
+            return {
+              fontWeight: isActive ? "bold" : "",
+              color: isActive ? "green" : "black",
+              viewTransitionName: isTransitioning ? "slide" : "",
+            };
+          }}
+        >
+          About Us
+        </NavLink>{" "}
       </div>
       <div className="flex gap-x-4 relative z-0">
         <button className="hidden lg:block hover:scale-100 hover:cursor-pointer">
