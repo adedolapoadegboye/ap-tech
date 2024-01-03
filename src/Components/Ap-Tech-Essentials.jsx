@@ -12,7 +12,7 @@ const ApTechEssentials = () => {
       </h1>
       <div className="flex flex-col w-full h-fit gap-6 px-2">
         <div className="flex flex-col lg:flex-row w-full h-full gap-2">
-          <div className="flex flex-col w-1/2 h-100 justify-center gap-2 items-center px-2 font-semibold bg-white rounded-2xl">
+          <div className="flex flex-col w-1/2 h-100 justify-center gap-2 items-center px-2 font-semibold bg-gray-900 text-white rounded-2xl">
             <h1 className="text-3xl essentials-body">iSell</h1>
             <h2 className="text-2xl font-normal essentials text-justify px-10">
               Welcome to AP-Tech, your premier destination for cutting-edge
@@ -30,7 +30,7 @@ const ApTechEssentials = () => {
           <div className="w-1/2">
             <img src={buy} alt="we buy gadgets" className="rounded-2xl" />
           </div>
-          <div className="flex flex-col w-1/2 h-100 justify-center gap-2 items-center navbar px-2 font-semibold bg-white rounded-2xl">
+          <div className="flex flex-col w-1/2 h-100 justify-center gap-2 items-center navbar px-2 font-semibold bg-gray-900 text-white rounded-2xl">
             <h1 className="text-3xl essentials-body">iBuy</h1>
             <h2 className="text-2xl font-normal essentials text-justify px-10">
               {" "}
@@ -46,7 +46,7 @@ const ApTechEssentials = () => {
           </div>
         </div>
         <div className="flex flex-row w-full h-full gap-2">
-          <div className="flex flex-col w-1/2 h-100 justify-center items-center navbar px-2 gap-2 font-semibold bg-white rounded-2xl">
+          <div className="flex flex-col w-1/2 h-100 justify-center items-center navbar px-2 gap-2 font-semibold bg-gray-900 text-white rounded-2xl">
             <h1 className="text-3xl essentials-body">iSwap</h1>
             <h2 className="text-2xl font-normal essentials text-justify px-10">
               {" "}

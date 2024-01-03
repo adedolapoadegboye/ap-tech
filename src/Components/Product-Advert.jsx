@@ -8,7 +8,7 @@ import flash6 from "../images/flashsale6.jpg";
 
 const flashSale1 = () => {
   return (
-    <div className="flex flex-col gap-2 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-white rounded-2xl">
+    <div className="flex flex-col gap-2 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl">
       <img src={flash1} alt="Flash sale of iphone" className="rounded-2xl" />
       <a
         href="https://web.whatsapp.com/send/?phone=2348134864048&text&type=phone_number&app_absent=0"
@@ -29,7 +29,7 @@ const flashSale1 = () => {
 };
 const flashSale2 = () => {
   return (
-    <div className="flex flex-col gap-2 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-white rounded-2xl">
+    <div className="flex flex-col gap-2 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl">
       <img src={flash2} alt="Flash sale of iphone" className="rounded-2xl" />
       <a
         href="https://web.whatsapp.com/send/?phone=2348134864048&text&type=phone_number&app_absent=0"
@@ -48,7 +48,7 @@ const flashSale2 = () => {
 };
 const flashSale3 = () => {
   return (
-    <div className="flex flex-col gap-2 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-white rounded-2xl">
+    <div className="flex flex-col gap-2 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl">
       <img src={flash3} alt="Flash sale of iphone" className="rounded-2xl" />
       <a
         href="https://web.whatsapp.com/send/?phone=2348134864048&text&type=phone_number&app_absent=0"
@@ -68,7 +68,7 @@ const flashSale3 = () => {
 
 const flashSale4 = () => {
   return (
-    <div className="flex flex-col gap-2 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-white rounded-2xl">
+    <div className="flex flex-col gap-2 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl">
       <img src={flash4} alt="Oraimo Power Bank" className="rounded-2xl" />
       <a
         href="https://web.whatsapp.com/send/?phone=2348134864048&text&type=phone_number&app_absent=0"
@@ -90,7 +90,7 @@ const flashSale4 = () => {
 
 const flashSale5 = () => {
   return (
-    <div className="flex flex-col gap-2 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-white rounded-2xl">
+    <div className="flex flex-col gap-2 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl">
       <img src={flash5} alt="Earpod Max" className="rounded-2xl" />
       <a
         href="https://web.whatsapp.com/send/?phone=2348134864048&text&type=phone_number&app_absent=0"
@@ -110,7 +110,7 @@ const flashSale5 = () => {
 
 const flashSale6 = () => {
   return (
-    <div className="flex flex-col gap-2 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-white rounded-2xl">
+    <div className="flex flex-col gap-2 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl">
       <img src={flash6} alt="Flash sale of iphone" className="rounded-2xl" />
       <a
         href="https://web.whatsapp.com/send/?phone=2348134864048&text&type=phone_number&app_absent=0"
@@ -131,8 +131,7 @@ const flashSale6 = () => {
 
 const ProductAdvert = () => {
   return (
-    <div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-9">
         <h1 className="font-black text-2xl lg:text-4xl w-full justify-center text-center flash-sale-animation">
           Holiday Flash Sales!!!
         </h1>
@@ -146,7 +145,6 @@ const ProductAdvert = () => {
           <div>{flashSale5()}</div>
           <div>{flashSale6()}</div>
         </div>
-      </div>
     </div>
   );
 };
