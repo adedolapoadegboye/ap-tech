@@ -15,7 +15,8 @@ const Contact = () => {
         <div>
           <h1 className="text-2xl lg:text-4xl text-center">
             {" "}
-            We don't just sell gadgets, we sell Happiness!
+            We don't just sell gadgets,
+            <br></br> we sell Happiness!
           </h1>
           {/* <h2 className="text-center text-xl lg:text-2xl">
             {" "}

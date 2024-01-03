@@ -17,8 +17,8 @@ const Navbar = () => {
       <div className="flex ap-tech text-xl md:text-3xl lg:text-4xl text-slate-900">
         <h1>AP Tech</h1>
       </div>
-      <div className="navbar hidden lg:flex gap-x-10 font-bold">
-      <NavLink
+      <div className="navbar hidden lg:flex lg:gap-x-6 pt-2 font-bold">
+        <NavLink
           to="/"
           style={({ isActive, isPending, isTransitioning }) => {
             return {
