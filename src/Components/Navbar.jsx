@@ -112,7 +112,7 @@ const Navbar = () => {
             };
           }}
         >
-          About Us
+          About
         </NavLink>{" "}
       </div>
       <div className="flex gap-x-4 relative z-0">
