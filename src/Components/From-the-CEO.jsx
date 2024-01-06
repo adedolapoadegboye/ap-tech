@@ -4,7 +4,7 @@ import CEO from "../images/CEO.jpg";
 const FromTheCEO = () => {
   return (
     <div className="flex flex-col lg:flex-row font-normal gap-6">
-      <div className="w-full flex flex-col text-left gap-4">
+      <div className="w-full flex flex-col text-left gap-4  px-[calc(2vw)] py-[calc(2vw)] bg-gray-900 text-white rounded-2xl ">
         <h1 className="essentials text-lg md:text-2xl lg:text-4xl text-left w-full font-semibold">
           About Us...
         </h1>
@@ -22,13 +22,6 @@ const FromTheCEO = () => {
           cutting-edge gadgets seamlessly integrate into our lives, enhancing
           connectivity, efficiency, and, most importantly, the overall human
           experience.
-          <br></br>
-          <br></br>
-          AP Tech's impact extends far beyond geographical borders. Our gadgets
-          have found homes in the hands of users around the globe, fostering
-          connections, bridging cultures, and creating a global community of
-          tech enthusiasts. We take pride in being part of the digital
-          transformation that unites people across continents.
           <br></br>
           <br></br>
           In conclusion, the history of AP Tech is a tapestry woven with threads

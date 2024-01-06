@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b4e907af.css",
-    "main.js": "/static/js/main.01f395a4.js",
+    "main.css": "/static/css/main.10acc5f2.css",
+    "main.js": "/static/js/main.eeb54502.js",
     "static/js/787.28608b13.chunk.js": "/static/js/787.28608b13.chunk.js",
     "static/media/hero-video.mp4": "/static/media/hero-video.b53e9e813d524e767db5.mp4",
     "static/media/review1.mp4": "/static/media/review1.61a77e14e83790c95156.mp4",
@@ -10,14 +10,21 @@
     "static/media/review2.mp4": "/static/media/review2.248d4c4f61b2cac20029.mp4",
     "static/media/sell2.jpg": "/static/media/sell2.8f096caa4736e58f1fc9.jpg",
     "static/media/buy.jpg": "/static/media/buy.80027eb8c18d711f8465.jpg",
+    "static/media/XR.jpg": "/static/media/XR.3028fc506ca0eb935611.jpg",
+    "static/media/13.jpg": "/static/media/13.15f7489c60ce46ac1387.jpg",
     "static/media/charger.jpg": "/static/media/charger.68bfbf73218bc96e65c4.jpg",
     "static/media/iPad.jpg": "/static/media/iPad.54544f9e9474d1202dca.jpg",
     "static/media/others2.jpg": "/static/media/others2.98f96c636eb77d67da3f.jpg",
     "static/media/mac.jpg": "/static/media/mac.fd6284a9c3776ef14b37.jpg",
+    "static/media/15.jpg": "/static/media/15.37fc2ace4fdec56ece65.jpg",
+    "static/media/14.jpg": "/static/media/14.14806efe33f2702c10f9.jpg",
     "static/media/earpods2.jpg": "/static/media/earpods2.45c9147799e5437a2971.jpg",
     "static/media/swap.jpg": "/static/media/swap.a3a4ec045361946570fd.jpg",
+    "static/media/12.jpg": "/static/media/12.119f6df0ece87ad58bde.jpg",
+    "static/media/11.jpg": "/static/media/11.dd06248bdf93ca476474.jpg",
     "static/media/iwatch.jpg": "/static/media/iwatch.b53737b5ca9e35f457c6.jpg",
     "static/media/iPhone.jpg": "/static/media/iPhone.e828a09b7d410672e384.jpg",
+    "static/media/iPhone Page.jpg": "/static/media/iPhone Page.5ed5dbbd83289edff322.jpg",
     "static/media/flashsale1.jpg": "/static/media/flashsale1.954a69b034c9deef36ca.jpg",
     "static/media/flashsale3.jpg": "/static/media/flashsale3.33eece311a10c201ee32.jpg",
     "static/media/flashsale4.jpg": "/static/media/flashsale4.5faeed56c6f604a126d4.jpg",
@@ -26,12 +33,12 @@
     "static/media/flashsale5.jpg": "/static/media/flashsale5.fff906f944aea6e44cc1.jpg",
     "static/media/CEO.jpg": "/static/media/CEO.6ecf12b91802b160b42d.jpg",
     "index.html": "/index.html",
-    "main.b4e907af.css.map": "/static/css/main.b4e907af.css.map",
-    "main.01f395a4.js.map": "/static/js/main.01f395a4.js.map",
+    "main.10acc5f2.css.map": "/static/css/main.10acc5f2.css.map",
+    "main.eeb54502.js.map": "/static/js/main.eeb54502.js.map",
     "787.28608b13.chunk.js.map": "/static/js/787.28608b13.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4e907af.css",
-    "static/js/main.01f395a4.js"
+    "static/css/main.10acc5f2.css",
+    "static/js/main.eeb54502.js"
   ]
 }
