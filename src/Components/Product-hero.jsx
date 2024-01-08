@@ -3,11 +3,11 @@ import iPhone from  "../images/iPhone Page.jpg"
 
 const ProductHero = () => {
   return (
-    <div>
+    <div className="">
       <div className="relative">
         <div className="w-screen static z-10">
           <div className="opacity-50 w-full">
-            <img src={iPhone} alt="unboxed iPhone 15" className=""/>
+            <img src={iPhone} alt="unboxed iPhone 15" className="w-full"/>
           </div>
         </div>
         <div className="navbar text-white text-justify absolute inset-0">
