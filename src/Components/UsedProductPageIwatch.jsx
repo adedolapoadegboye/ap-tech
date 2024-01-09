@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 
-const ProductPageIwatch = () => {
+
+const UsedProductPageIphone = () => {
 
   const [data, setData] = useState(null);
   const [img, setImg] = useState([]);
@@ -75,4 +76,4 @@ const ProductPageIwatch = () => {
   }
 };
 
-export default ProductPageIwatch;
+export default UsedProductPageIphone;
