@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 
-const UsedProductPageIphone = () => {
+const ProductPageIwatch = () => {
 
   const [data, setData] = useState(null);
   const [img, setImg] = useState([]);
@@ -12,8 +12,8 @@ const UsedProductPageIphone = () => {
     const fetchData = async () => {
       try {
         // Make a fetch API call
-        const responseData = await fetch('http://localhost:4000/usediwatch/data');
-        const responseImage = await fetch('http://localhost:4000/usediwatch/images');
+        const responseData = await fetch('http://localhost:4000/mac/data');
+        const responseImage = await fetch('http://localhost:4000/mac/images');
         const data = await responseData.json();
         const img = await responseImage.json();
         console.log(data)
@@ -60,7 +60,7 @@ const UsedProductPageIphone = () => {
                 alt={item["name"]}
                 className="rounded-2xl"
               />
-              <h2 className="navbar font-bold text-lg lg:text-lg">
+              <h2 className="navbar font-bold text-lg lg:text-xl">
                 {item["name"]}
               </h2>
               <h3>
@@ -75,4 +75,4 @@ const UsedProductPageIphone = () => {
   }
 };
 
-export default UsedProductPageIphone;
+export default ProductPageIwatch;

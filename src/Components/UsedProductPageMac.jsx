@@ -12,8 +12,8 @@ const UsedProductPageIphone = () => {
     const fetchData = async () => {
       try {
         // Make a fetch API call
-        const responseData = await fetch('http://localhost:4000/usediwatch/data');
-        const responseImage = await fetch('http://localhost:4000/usediwatch/images');
+        const responseData = await fetch('http://localhost:4000/usedmac/data');
+        const responseImage = await fetch('http://localhost:4000/usedmac/images');
         const data = await responseData.json();
         const img = await responseImage.json();
         console.log(data)

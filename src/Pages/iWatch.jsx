@@ -3,7 +3,7 @@ import HeaderAnnouncement from "../Components/Header-Announcement";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import ProductHeroWatch from "../Components/Product-hero-watch";
-import UsedProductPageIphone from "../Components/UsedProductPageIphone";
+import UsedProductPageIwatch from "../Components/UsedProductPageIwatch";
 import ContactForm from "../Components/Form";
 import Contact from "../Components/Contact";
 import ProductPageIwatch from "../Components/ProductPageIwatch";
@@ -35,7 +35,7 @@ const Watch = () => {
           {" "}
           Shop Our Used iWatches{" "}
         </h2>
-        <UsedProductPageIphone />
+        <UsedProductPageIwatch />
       </div>
       <div className="px-[calc(5vw)] flex justify-center pb-[calc(6vh)]">
         <div className="static z-0 px-2 h-full w-full md:w-1/2 rounded-2xl">
