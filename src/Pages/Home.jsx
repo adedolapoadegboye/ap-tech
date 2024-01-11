@@ -26,9 +26,9 @@ function Home() {
       <div className="static pb-[calc(6vh)] hidden lg:flex">
         <Hero />
       </div>
-      <div className="static z-0 hidden lg:flex pb-[calc(6vh)]">
+      {/* <div className="static z-0 hidden lg:flex pb-[calc(6vh)]">
         <ApTechEssentials />
-      </div>
+      </div> */}
       <div className="static z-0 pb-[calc(6vh)]">
         <ProductCategory />
       </div>

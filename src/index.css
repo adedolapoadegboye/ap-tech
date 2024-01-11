@@ -55,9 +55,9 @@ a:link {
 }
 
 /* visited link */
-a:visited {
-  color: white;
-}
+/* a:visited {
+  color: lightseagreen;
+} */
 
 /* mouse over link */
 a:hover {
