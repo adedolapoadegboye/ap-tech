@@ -14,7 +14,7 @@ const Navbar = () => {
   };
   return (
     <div className="flex justify-between px-[calc(5vw)] py-[calc(2vh)] border-b-2 border-black">
-      <div className="flex ap-tech text-xl md:text-3xl lg:text-4xl text-slate-900">
+      <div className="flex ap-tech text-2xl md:text-3xl lg:text-4xl text-slate-900">
         <h1>AP Tech</h1>
       </div>
       <div className="navbar hidden lg:flex lg:gap-x-6 pt-2 font-bold">

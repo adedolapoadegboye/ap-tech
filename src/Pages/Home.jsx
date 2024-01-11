@@ -26,27 +26,30 @@ function Home() {
       <div className="static pb-[calc(6vh)] hidden lg:flex">
         <Hero />
       </div>
-      {/* <div className="static z-0 hidden lg:flex pb-[calc(6vh)]">
+      <div className="static z-0 hidden lg:flex pb-[calc(6vh)] px-[calc(5vw)]">
         <ApTechEssentials />
-      </div> */}
-      <div className="static z-0 pb-[calc(6vh)]">
+      </div>
+      <div className="static z-0 pb-[calc(6vh)] px-[calc(5vw)]">
         <ProductCategory />
       </div>
-      <div className="static z-0 pb-[calc(6vh)]">
+      <div className="static flex flex-col gap-y-4 z-0 pb-[calc(6vh)] px-[calc(5vw)]">
+        <h1 className="font-black text-2xl lg:text-4xl w-full justify-center text-center flash-sale-animation">
+          January Flash Sales!!!
+        </h1>
         <ProductAdvert />
       </div>
-      <div className="static z-0 pb-[calc(6vh)] px-2 hidden">
+      <div className="static z-0 pb-[calc(6vh)] hidden px-[calc(5vw)]">
         <FromTheCEO />
       </div>
-      <div className="hidden lg:flex lg:flex-row pb-[calc(6vh)] z-0 w-full h-full justify-center gap-6 px-2">
-        <div className="static z-0 px-2 h-full w-full rounded-2xl">
+      <div className="hidden lg:flex lg:flex-row px-[calc(5vw)] pb-[calc(6vh)] z-0 w-full h-full justify-center gap-6">
+        <div className="static z-0 h-full w-full rounded-2xl">
           <Contact />
         </div>
-        <div className="static z-0 px-2 h-full w-full bg-gray-900 rounded-2xl">
+        <div className="static z-0 h-full w-full bg-gray-900 rounded-2xl">
           <Reviews />
         </div>
       </div>
-      <div className="static z-0 pb-[calc(6vh)] px-2 hidden">
+      <div className="static z-0 pb-[calc(6vh)] hidden px-[calc(5vw)]">
         <ContactForm />
       </div>
       <div className="static z-0 pb-[calc(0vh)] px-2 bg-gray-900">
