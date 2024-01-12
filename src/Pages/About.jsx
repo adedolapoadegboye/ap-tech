@@ -3,7 +3,7 @@ import HeaderAnnouncement from "../Components/Header-Announcement";
 import Navbar from "../Components/Navbar";
 import FromTheCEO from "../Components/From-the-CEO";
 import Footer from "../Components/Footer";
-import ApTechEssentials from "../Components/Ap-Tech-Essentials";
+// import ApTechEssentials from "../Components/Ap-Tech-Essentials";
 
 const About = () => {
   return (
@@ -20,9 +20,9 @@ const About = () => {
       <div className="static z-0 pb-[calc(6vh)] px-[calc(5vw)]">
         <FromTheCEO />
       </div>
-      <div className="static z-0 hidden lg:flex pb-[calc(6vh)] px-[calc(5vw)]">
+      {/* <div className="static z-0 hidden lg:flex pb-[calc(6vh)] px-[calc(5vw)]">
         <ApTechEssentials />
-      </div>
+      </div> */}
       <div className="static z-0 pb-[calc(0vh)] bg-gray-900">
         <Footer />
       </div>
