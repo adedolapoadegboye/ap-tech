@@ -32,8 +32,8 @@ function Home() {
       <div className="static z-0 pb-[calc(6vh)] px-[calc(5vw)]">
         <ProductCategory />
       </div>
-      <div className="static flex flex-col gap-y-4 z-0 pb-[calc(6vh)] px-[calc(5vw)]">
-        <h1 className="font-black text-2xl lg:text-4xl w-full justify-center text-center flash-sale-animation">
+      <div className="static flex flex-col gap-y-10 lg:gap-y-10 z-0 pb-[calc(6vh)] px-[calc(5vw)]">
+        <h1 className="font-black text-3xl lg:text-6xl w-full justify-center text-center flash-sale-animation">
           January Flash Sales!!!
         </h1>
         <ProductAdvert />

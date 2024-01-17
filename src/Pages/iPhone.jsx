@@ -24,19 +24,19 @@ const Phone = () => {
         <ProductHero />
       </div>
       <div className="static z-0 pb-[calc(vh)] px-[calc(5vw)]">
-        <h2 className="navbar text-extrabold text-2xl md:text-4xl lg:text-6xl tracking-tighter flex justify-center items-center h-full w-full text-gray-900 py-[calc(5vh)]">
+        <h2 className="navbar text-extrabold text-3xl md:text-5xl lg:text-6xl tracking-tighter flex justify-center items-center h-full w-full text-gray-900 py-[calc(5vh)]">
           {" "}
           Shop Our New iPhones{" "}
         </h2>
         <ProductPageIphone />
       </div>
-      <div className="static z-0 pb-[calc(5vh)] px-[calc(5vw)]">
+      {/* <div className="static z-0 pb-[calc(5vh)] px-[calc(5vw)] hidden">
         <h2 className="navbar text-extrabold text-2xl md:text-4xl lg:text-6xl tracking-tighter flex justify-center items-center h-full w-full text-gray-900 py-[calc(5vh)]">
           {" "}
           Shop Our Used Iphones{" "}
         </h2>
         <UsedProductPageIphone />
-      </div>
+      </div> */}
       <div className="px-[calc(5vw)] flex justify-center pb-[calc(6vh)]">
         <div className="static z-0 px-2 h-full w-full md:w-1/2 rounded-2xl">
           <Contact />

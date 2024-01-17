@@ -55,7 +55,7 @@ const ProductAdvert = () => {
             className="flex flex-col justify-end gap-8 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl"
           >
             <a
-              href="https://web.whatsapp.com/send/?phone=2348134864048&text&type=phone_number&app_absent=0"
+              href="https://wa.me/2348134864048"
               target="_blank"
               rel="noreferrer"
             >
