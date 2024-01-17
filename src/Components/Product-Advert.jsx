@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from "react";
+import flashSale1 from "../images/flashsale1.jpg"
+import flashSale2 from "../images/flashsale2-1.jpg"
+import flashSale3 from "../images/flashsale3.jpg"
+import flashSale4 from "../images/flashsale4.jpg"
+import flashSale5 from "../images/flashsale5.jpg"
+import flashSale6 from "../images/flashsale6.jpg"
+
 
 const ProductAdvert = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  let image = [];
+  let images = [flashSale1, flashSale2, flashSale3, flashSale4, flashSale5, flashSale6];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -38,15 +45,10 @@ const ProductAdvert = () => {
     return error;
   }
 
-  if (data) {
-    data.map((data) => image.push(data["image"]));
-  }
-
   if (!loading) {
     console.log(data);
-    console.log(image);
     return (
-      <div className="grid grid-cols-2 lg:grid-cols-2 gap-10">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
         {data.map((item, index) => (
           <div
             key={index}
@@ -58,14 +60,14 @@ const ProductAdvert = () => {
               rel="noreferrer"
             >
               <img
-                src={item.image}
+                src={images[index]}
                 alt={item["name"]}
                 className="rounded-2xl"
               />
               <h2 className="navbar font-bold text-lg lg:text-xl">
                 {item["name"]}
               </h2>
-              <h3 className="flex justify-center">{item["extra"].map((extra,key) => <div key={key} className="px-2 py-2">{extra}</div>)}</h3>
+              <h3 className="flex justify-center text-xs md:text-sm lg:text-md">{item["extra"].map((extra,key) => <div key={key} className="px-2 py-2">{extra}</div>)}</h3>
               <h3>
                 <span>&#8358;</span>
                 {item["price"]}
