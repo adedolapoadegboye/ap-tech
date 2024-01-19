@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
-import flashSale1 from "../images/flashsale1.jpg"
-import flashSale2 from "../images/flashsale2-1.jpg"
-import flashSale3 from "../images/flashsale3.jpg"
-import flashSale4 from "../images/flashsale4.jpg"
-import flashSale5 from "../images/flashsale5.jpg"
-import flashSale6 from "../images/flashsale6.jpg"
-
+import iwatch from "../images/flashsale1.jpg";
+import iphone from "../images/flashsale2-1.jpg";
+import speaker from "../images/flashsale3.jpg";
+import powerbank from "../images/flashsale4.jpg";
+import earpod from "../images/flashsale5.jpg";
+import charger from "../images/flashsale6.jpg";
 
 const ProductAdvert = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  let images = [flashSale1, flashSale2, flashSale3, flashSale4, flashSale5, flashSale6];
+  const images = [iwatch, iphone, speaker, powerbank, earpod, charger];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -45,30 +44,33 @@ const ProductAdvert = () => {
     return error;
   }
 
+
   if (!loading) {
     console.log(data);
     return (
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 lg:gap-4">
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col justify-end gap-8 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl"
+            className="flex flex-col justify-start gap-4 lg:gap-8 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl"
           >
+            <img
+              src={images[index]}
+              alt={item["name"]}
+              className="rounded-2xl"
+            />
             <a
               href="https://wa.me/2348134864048"
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src={images[index]}
-                alt={item["name"]}
-                className="rounded-2xl"
-              />
-              <h2 className="navbar font-bold text-lg lg:text-xl">
+              <h2 className="navbar flex justify-left text-left font-bold text-md lg:text-lg">
                 {item["name"]}
               </h2>
-              <h3 className="flex justify-center text-xs md:text-sm lg:text-md">{item["extra"].map((extra,key) => <div key={key} className="px-2 py-2">{extra}</div>)}</h3>
-              <h3>
+              <h3 className="flex justify-left text-left py-2 text-xs md:text-sm lg:text-md font-light">
+                {item.size}
+              </h3>
+              <h3 className="flex justify-left text-xs md:text-sm lg:text-md font-light">
                 <span>&#8358;</span>
                 {item["price"]}
               </h3>
