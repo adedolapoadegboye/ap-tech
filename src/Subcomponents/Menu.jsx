@@ -49,7 +49,7 @@ const Menu = ({ isOpen, onClose }) => {
               };
             }}
           >
-            iWatch
+            iWatches
           </NavLink>{" "}
           <NavLink
             to="/mac"
@@ -61,7 +61,7 @@ const Menu = ({ isOpen, onClose }) => {
               };
             }}
           >
-            Mac
+            MacBooks
           </NavLink>{" "}
           <NavLink
             to="/earpod"

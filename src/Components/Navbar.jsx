@@ -52,7 +52,7 @@ const Navbar = () => {
             };
           }}
         >
-          iWatch
+          iWatches
         </NavLink>{" "}
         <NavLink
           to="/mac"
@@ -64,7 +64,7 @@ const Navbar = () => {
             };
           }}
         >
-          Mac
+          MacBooks
         </NavLink>{" "}
         <NavLink
           to="/earpod"
