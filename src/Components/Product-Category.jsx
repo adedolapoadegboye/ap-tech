@@ -2,11 +2,11 @@ import React from "react";
 import ReactCountryFlag from "react-country-flag";
 import iPhone from "../images/iPhone.jpg";
 import iwatch from "../images/iwatch.jpg";
-// import iPad from "../images/iPad.jpg";
+import iPad from "../images/iPad.jpg";
 import mac from "../images/mac.jpg";
 import earpods from "../images/earpods2.jpg";
 // import straps_cases from "../images/accessories.jpg";
-import charger from "../images/charger.jpg";
+// import charger from "../images/charger.jpg";
 import others2 from "../images/others2.jpg";
 import { Link } from "react-router-dom";
 
@@ -44,8 +44,8 @@ const ProductCategory = () => {
             <Link to="/earpod" className="w-full h-full absolute inset-x-0 bottom-0 top-4 text-white font-extrabold text-3xl">Earpods</Link>
           </div>
           <div className="relative">
-            <img src={charger} alt="Accessories" className="h-[300px] lg:h-[400px] w-full rounded-xl static"></img>
-            <Link to="/accessory" className="w-full h-full absolute inset-x-0 bottom-0 top-4 text-white font-extrabold text-3xl">Accessories</Link>
+            <img src={iPad} alt="Accessories" className="h-[300px] lg:h-[400px] w-full rounded-xl static"></img>
+            <Link to="/ipad" className="w-full h-full absolute inset-x-0 bottom-0 top-4 text-white font-extrabold text-3xl">iPads</Link>
           </div>
           <div className="relative">
             <img src={others2} alt="others" className="h-[300px] lg:h-[400px] w-full rounded-xl static"></img>

@@ -18,7 +18,7 @@ const HeaderAnnouncement = () => {
 
   const announcementChange = () => {
     let announcementToDisplay = announcements[getRandomInt(count)]
-    console.log(announcementToDisplay)
+    // console.log(announcementToDisplay)
     return announcementToDisplay
   }
 

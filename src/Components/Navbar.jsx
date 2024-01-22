@@ -67,7 +67,7 @@ const Navbar = () => {
           MacBooks
         </NavLink>{" "}
         <NavLink
-          to="/earpod"
+          to="/airpod"
           style={({ isActive, isPending, isTransitioning }) => {
             return {
               fontWeight: isActive ? "bold" : "",
@@ -76,10 +76,10 @@ const Navbar = () => {
             };
           }}
         >
-          Earpods
+          Airpods
         </NavLink>{" "}
         <NavLink
-          to="/accessory"
+          to="/iPad"
           style={({ isActive, isPending, isTransitioning }) => {
             return {
               fontWeight: isActive ? "bold" : "",
@@ -88,7 +88,7 @@ const Navbar = () => {
             };
           }}
         >
-          Accessories
+          iPads
         </NavLink>{" "}
         <NavLink
           to="/others"

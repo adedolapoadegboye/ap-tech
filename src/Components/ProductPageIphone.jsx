@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import BounceLoader from "react-spinners/ClipLoader";
 import iphone15promax from "../images/products/iphones/iphone15ProMax.jpeg";
 import iphone15pro from "../images/products/iphones/iphone15Pro.jpeg";
 import iphone15plus from "../images/products/iphones/iphone15plus.jpeg";
@@ -82,6 +83,7 @@ const ProductPageIphone = () => {
 
   if (loading) {
     console.log("Loading");
+    return <div><BounceLoader color="green" /></div>;
   }
 
   if (error) {

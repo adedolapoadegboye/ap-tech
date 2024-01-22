@@ -12,7 +12,7 @@ const ProductHero = () => {
         </div>
         <div className="navbar text-white text-justify absolute inset-0">
           <h2 className="text-extrabold text-2xl md:text-4xl lg:text-6xl tracking-tighter flex justify-center items-center h-full w-full text-neutral-50">
-            Earpods
+            Airpods
           </h2>
         </div>
       </div>

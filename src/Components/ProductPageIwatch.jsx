@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import BounceLoader from "react-spinners/ClipLoader";
 import ultra2 from "../images/products/iwatch/apple-watch-ultra2.jpeg";
 import series9 from "../images/products/iwatch/apple-watch-series9.jpeg";
 import series9al from "../images/products/iwatch/apple-watch-series9-aluminum.jpeg";
@@ -66,6 +67,7 @@ const ProductPageIwatch = () => {
 
   if (loading) {
     console.log("Loading");
+    return <div><BounceLoader color="green" /></div>;
   }
 
   if (error) {

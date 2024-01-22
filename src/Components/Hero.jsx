@@ -16,9 +16,12 @@ const Hero = () => {
           <img src={hero_image} alt="iPhone 15"></img>
         </div>
       </div>
-      <div className="navbar text-neutral-900 text-left absolute top-[calc(2vh)] left-0 z-10 px-[calc(5vw)] py-[calc(2vh)] lg:py-[calc(5vh)] w-1/2 h-full">
-        <h2 className="pb-4 text-extrabold lg:pb-10 pe-4 text-lg lg:text-6xl tracking-tighter">
+      <div className="navbar text-neutral-900 text-left absolute top-[calc(4vh)] left-0 z-10 px-[calc(5vw)] py-[calc(2vh)] lg:py-[calc(5vh)] w-1/2 h-full">
+        <h2 className="pb-4 text-extrabold lg:pb-12 pe-4 text-lg lg:text-6xl tracking-tighter">
           Harness the power of the future with the Apple Ecosystem
+        </h2>
+        <h2 className="pb-4 text-extrabold lg:pb-12 pe-4 text-lg lg:text-6xl tracking-tight">
+          How may we serve you today?
         </h2>
         <button className="py-2 px-2 border-2 border-black rounded-xl text-white bg-black text-lg lg:text-2xl subpixel-antialiased">
           <a

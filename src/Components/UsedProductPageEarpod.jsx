@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 
-const UsedProductPageEarpod = () => {
+const UsedProductPageAirpod = () => {
 
   const [data, setData] = useState(null);
   const [img, setImg] = useState([]);
@@ -75,4 +75,4 @@ const UsedProductPageEarpod = () => {
   }
 };
 
-export default UsedProductPageEarpod;
+export default UsedProductPageAirpod;

@@ -33,7 +33,7 @@ const Phone = () => {
       <div className="static z-0 pb-[calc(5vh)] px-[calc(5vw)]">
         <h2 className="navbar text-extrabold text-2xl md:text-4xl lg:text-6xl tracking-tighter flex justify-center items-center h-full w-full text-gray-900 py-[calc(5vh)]">
           {" "}
-          Shop Our Uk Used Iphones{" "}
+          Shop Our UK Used Iphones{" "}
         </h2>
         <UsedProductPageIphone />
       </div>
