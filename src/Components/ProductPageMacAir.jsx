@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import mac from "../images/products/mac/mac.jpeg";
+import mac from "../images/products/mac/air.png";
 import BounceLoader from "react-spinners/ClipLoader";
 
 const ProductPageMacPro = (props) => {
@@ -86,10 +86,10 @@ const ProductPageMacPro = (props) => {
                   Processor: {item.processor}
                 </h3>
                 <h3 className="flex justify-left text-left py-2 text-xs md:text-sm lg:text-md font-light">
-                  CPU: {item.CPU}
+                  Touch: {item.touch}
                 </h3>
                 <h3 className="flex justify-left text-left py-2 text-xs md:text-sm lg:text-md font-light">
-                  GPU: {item.GPU}
+                  Display: {item.display}
                 </h3>
                 <h3 className="flex justify-left text-left py-2 text-xs md:text-sm lg:text-md font-light">
                   SSD: {item.SSD}

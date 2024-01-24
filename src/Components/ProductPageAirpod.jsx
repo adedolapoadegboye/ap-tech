@@ -5,18 +5,38 @@ import airpodg3 from "../images/products/airpod/airpodg3.jpeg";
 import airpodprog2 from "../images/products/airpod/airpodprog2.jpeg";
 import airpodmax from "../images/products/airpod/airpodmax.jpeg";
 
-const ProductPageAirpod = () => {
+let images = [airpodg2, airpodg3, airpodprog2, airpodprog2, airpodmax];
+
+const ProductPageAirpod = (props) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const { all, gen2, gen3, progen3, max} = props;
+  console.log(all, gen2, gen3, progen3, max);
+  const [api, setApi] = useState("all");
 
-  let images = [airpodg2, airpodg3, airpodg3, airpodprog2, airpodmax];
+  useEffect(() => {
+    // Set the API based on the props
+    if (all) {
+      setApi("all");
+    } else if (gen2) {
+      setApi("gen2");
+    } else if (gen3) {
+      setApi("gen3");
+    } else if (progen3) {
+      setApi("progen3");
+    } else if (max) {
+      setApi("max");
+    }
+  }, [all, gen2, gen3, progen3, max]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
+        let apiLink = `http://localhost:4000/airpod/${api}`;
+        console.log(apiLink);
         // Make a fetch API call
-        const responseData = await fetch("http://localhost:4000/airpod");
+        const responseData = await fetch(apiLink);
         const data = await responseData.json();
         console.log(data);
         // Update state with the fetched data
@@ -30,11 +50,15 @@ const ProductPageAirpod = () => {
       }
     };
     fetchData();
-  }, []);
+  }, [api]);
 
   if (loading) {
     console.log("Loading");
-    return <div><BounceLoader color="green" /></div>;
+    return (
+      <div>
+        <BounceLoader color="green" />
+      </div>
+    );
   }
 
   if (error) {

@@ -7,8 +7,20 @@ import ProductPageOthers from "../Components/ProductPageOthers";
 // import UsedProductPageEarpod from "../Components/UsedProductPageEarpod";
 import ContactForm from "../Components/Form";
 import Contact from "../Components/Contact";
+import { useState } from "react";
+import OthersFilter from "../Subcomponents/OthersFilter";
+
 
 const Others = () => {
+  const [all, setAll] = useState(false)
+  const [starlinks, setStarlinks] = useState(false)
+  const [chargers, setChargers] = useState(false)
+  const [cases, setCases] = useState(false)
+  const [pencils, setPencils] = useState(false)
+  const [bands, setBands] = useState(false)
+  const [speakers, setSpeakers] = useState(false)
+
+
   return (
     <div className="bg-neutral-200 relative flex flex-col gap-0">
       <div className="sticky top-0 left-0 right-0 flex flex-col z-20 pb-[calc(0vh)] lg:pb-0">
@@ -23,12 +35,13 @@ const Others = () => {
       <div className="static z-0 bg-gray-900 hidden lg:flex">
         <ProductHero />
       </div>
-      <div className="static z-0 pb-[calc(5vh)] px-[calc(5vw)]">
-        <h2 className="navbar text-extrabold text-2xl md:text-4xl lg:text-6xl tracking-tighter flex justify-center items-center h-full w-full text-gray-900 py-[calc(5vh)]">
+      <div className="static z-0 px-[calc(5vw)] flex flex-col gap-10 py-[calc(5vh)]">
+        <h2 className="navbar text-extrabold text-2xl md:text-4xl lg:text-6xl tracking-tighter flex justify-center items-center h-full w-full text-gray-900">
           {" "}
-          Shop Other Devices{" "}
+          Shop Other Devices and Gadgets{" "}
         </h2>
-        <ProductPageOthers />
+        <OthersFilter setAll={setAll} setStarlinks={setStarlinks} setChargers={setChargers} setCases={setCases} setPencils={setPencils} setBands={setBands} setSpeakers={setSpeakers}/>
+        <ProductPageOthers all={all} starlinks={starlinks} chargers={chargers} cases={cases} pencils={pencils} bands={bands} speakers={speakers}/>
       </div>
       {/* <div className="static z-0 pb-[calc(5vh)] px-[calc(5vw)]">
         <h2 className="navbar text-extrabold text-2xl md:text-4xl lg:text-6xl tracking-tighter flex justify-center items-center h-full w-full text-gray-900 py-[calc(5vh)]">
