@@ -19,37 +19,100 @@ import series4al from "../images/products/iwatch/apple-watch-series-4-aluminum.j
 import series3 from "../images/products/iwatch/apple-watch-edition-series3.jpeg";
 import series3al from "../images/products/iwatch/apple-watch-series3-al.jpeg";
 
-const ProductPageIwatch = () => {
+let images = [
+  ultra2,
+  series9,
+  series9al,
+  ultra,
+  series8,
+  series8al,
+  se2022,
+  series7,
+  series7al,
+  se2020,
+  series6,
+  series6al,
+  series5,
+  series5al,
+  series4,
+  series4al,
+  series3,
+  series3al,
+];
+
+const ProductPageIwatch = (props) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
-  let images = [
-    ultra2,
+  const {
+    all,
     series9,
-    series9al,
-    ultra,
     series8,
-    series8al,
-    se2022,
     series7,
-    series7al,
-    se2020,
     series6,
-    series6al,
     series5,
-    series5al,
     series4,
-    series4al,
     series3,
-    series3al
-  ];
+    se,
+    ultra,
+  } = props;
+  console.log(
+    all,
+    series9,
+    series8,
+    series7,
+    series6,
+    series5,
+    series4,
+    series3,
+    se,
+    ultra
+  );
+  const [api, setApi] = useState("all");
+
+  useEffect(() => {
+    // Set the API based on the props
+    if (all) {
+      setApi("all");
+    } else if (series9) {
+      setApi("9");
+    } else if (series8) {
+      setApi("8");
+    } else if (series7) {
+      setApi("7");
+    } else if (series6) {
+      setApi("6");
+    } else if (series5) {
+      setApi("5");
+    } else if (series4) {
+      setApi("4");
+    } else if (series3) {
+      setApi("3");
+    } else if (se) {
+      setApi("SE");
+    } else if (ultra) {
+      setApi("ultra");
+    }
+  }, [
+    all,
+    series9,
+    series8,
+    series7,
+    series6,
+    series5,
+    series4,
+    series3,
+    se,
+    ultra,
+  ]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
+        let apiLink = `http://localhost:4000/iwatch/${api}`;
+        console.log(apiLink);
         // Make a fetch API call
-        const responseData = await fetch("http://localhost:4000/iwatch/data");
+        const responseData = await fetch(apiLink);
         const data = await responseData.json();
         console.log(data);
         // Update state with the fetched data
@@ -63,11 +126,15 @@ const ProductPageIwatch = () => {
       }
     };
     fetchData();
-  }, []);
+  }, [api]);
 
   if (loading) {
     console.log("Loading");
-    return <div><BounceLoader color="green" /></div>;
+    return (
+      <div>
+        <BounceLoader color="green" />
+      </div>
+    );
   }
 
   if (error) {
@@ -97,10 +164,21 @@ const ProductPageIwatch = () => {
               <h2 className="navbar flex justify-left text-left font-bold text-md lg:text-lg">
                 {item["name"]}
               </h2>
-              <h3 className="flex justify-left text-left py-2 text-xs md:text-sm lg:text-md font-light">
-                {item.size}
-              </h3>
-              <h3 className="flex justify-left text-xs md:text-sm lg:text-md font-light">
+              {/* <div className="flex flex-col">
+                <h3 className="flex justify-left text-left py-2 text-xs md:text-sm lg:text-md font-light">
+                  Processor: {item.processor}
+                </h3>
+                <h3 className="flex justify-left text-left py-2 text-xs md:text-sm lg:text-md font-light">
+                  Battery life: {item.battery}
+                </h3>
+                <h3 className="flex justify-left text-left py-2 text-xs md:text-sm lg:text-md font-light">
+                  Battery Life with Case: {item.batterywithcase}
+                </h3>
+                <h3 className="flex justify-left text-left py-2 text-xs md:text-sm lg:text-md font-light">
+                  Case: {item.case}
+                </h3>
+              </div> */}
+              <h3 className="flex justify-left text-xs md:text-sm lg:text-md font-light pt-2">
                 <span>&#8358;</span>
                 {item["price"]}
               </h3>
