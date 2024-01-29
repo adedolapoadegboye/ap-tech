@@ -1,44 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BounceLoader from "react-spinners/ClipLoader";
-import ultra2 from "../images/products/iwatch/apple-watch-ultra2.jpeg";
-import series9 from "../images/products/iwatch/apple-watch-series9.jpeg";
-import series9al from "../images/products/iwatch/apple-watch-series9-aluminum.jpeg";
-import ultra from "../images/products/iwatch/apple-watch-ultra.jpeg";
-import series8 from "../images/products/iwatch/apple-watch-8.jpeg";
-import series8al from "../images/products/iwatch/apple-watch-8-aluminum.jpeg";
-import se2022 from "../images/products/iwatch/apple-watch-8se-2022.jpeg";
-import series7 from "../images/products/iwatch/apple-watch-series-7.jpeg";
-import series7al from "../images/products/iwatch/apple-watch-series-7-aluminum.jpeg";
-import se2020 from "../images/products/iwatch/apple-watch-se.jpeg";
-import series6 from "../images/products/iwatch/apple-watch-s6-steel.jpeg";
-import series6al from "../images/products/iwatch/apple-watch-s6.jpeg";
-import series5 from "../images/products/iwatch/apple-watch-5-ss.jpeg";
-import series5al from "../images/products/iwatch/apple-watch-5-al.jpeg";
-import series4 from "../images/products/iwatch/apple-watch-series-4-steel.jpeg";
-import series4al from "../images/products/iwatch/apple-watch-series-4-aluminum.jpeg";
-import series3 from "../images/products/iwatch/apple-watch-edition-series3.jpeg";
-import series3al from "../images/products/iwatch/apple-watch-series3-al.jpeg";
 
-let images = [
-  ultra2,
-  series9,
-  series9al,
-  ultra,
-  series8,
-  series8al,
-  se2022,
-  series7,
-  series7al,
-  se2020,
-  series6,
-  series6al,
-  series5,
-  series5al,
-  series4,
-  series4al,
-  series3,
-  series3al,
-];
 
 const UsedProductPageIwatch = (props) => {
   const [data, setData] = useState(null);
@@ -55,7 +17,6 @@ const UsedProductPageIwatch = (props) => {
     series3,
     se,
     ultra,
-    viewer,
   } = props;
   console.log(
     all,
@@ -153,7 +114,7 @@ const UsedProductPageIwatch = (props) => {
             className="flex flex-col justify-start gap-4 lg:gap-8 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl"
           >
             <img
-              src={images[index]}
+              src={item.image}
               alt={item["name"]}
               className="rounded-2xl"
             />
@@ -179,9 +140,10 @@ const UsedProductPageIwatch = (props) => {
                   Case: {item.case}
                 </h3>
               </div> */}
-              <h3 className="flex justify-left text-xs md:text-sm lg:text-md font-light pt-2">
+              <h3 className="flex justify-left text-xs md:text-sm lg:text-md font-normal pt-2">
                 <span>&#8358;</span>
-                {item["price"]}
+                {item["lowprice"]} - <>&nbsp;</><span>&#8358;</span>
+                {item["highprice"]}
               </h3>
             </a>
           </div>

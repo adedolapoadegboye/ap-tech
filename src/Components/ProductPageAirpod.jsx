@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BounceLoader from "react-spinners/ClipLoader";
-import airpodg2 from "../images/products/airpod/airpodg2.jpeg";
-import airpodg3 from "../images/products/airpod/airpodg3.jpeg";
-import airpodprog2 from "../images/products/airpod/airpodprog2.jpeg";
-import airpodmax from "../images/products/airpod/airpodmax.jpeg";
 
-let images = [airpodg2, airpodg3, airpodprog2, airpodprog2, airpodmax];
 
 const ProductPageAirpod = (props) => {
   const [data, setData] = useState(null);
@@ -75,7 +70,7 @@ const ProductPageAirpod = (props) => {
             key={index}
             className="flex flex-col justify-start gap-4 lg:gap-8 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl"
           >
-            <img src={images[index]} alt={item["name"]} className="rounded-2xl" />
+            <img src={item.image} alt={item["name"]} className="rounded-2xl" />
             <a
               href="https://wa.me/2348134864048"
               target="_blank"
@@ -98,9 +93,10 @@ const ProductPageAirpod = (props) => {
                   Case: {item.case}
                 </h3>
               </div>
-              <h3 className="flex justify-left text-xs md:text-sm lg:text-md font-light pt-2">
+              <h3 className="flex justify-left text-xs md:text-sm lg:text-md font-normal pt-2">
                 <span>&#8358;</span>
-                {item["price"]}
+                {item["lowprice"]} - <>&nbsp;</><span>&#8358;</span>
+                {item["highprice"]}
               </h3>
             </a>
           </div>

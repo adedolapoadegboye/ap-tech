@@ -9,7 +9,6 @@ import ContactForm from "../Components/Form";
 import Contact from "../Components/Contact";
 import ProductPageIwatch from "../Components/ProductPageIwatch";
 import IWatchFilter from "../Subcomponents/IWatchFilter";
-import UsedIWatchFilter from "../Subcomponents/UsedIWatchFilter";
 
 const Watch = () => {
   const [all, setAll] = useState(false);
@@ -73,7 +72,7 @@ const Watch = () => {
             {" "}
             Browse Our {viewer} iWatches{" "}
           </h2>
-          <UsedIWatchFilter
+          <IWatchFilter
             setAll={setAll}
             setSeries9={setSeries9}
             setSeries8={setSeries8}
@@ -119,14 +118,16 @@ const Watch = () => {
       </div>
       <div className="static z-0 justify-center flex flex-row gap-2 pt-[calc(5vh)]">
         <button
-          className="border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500"
-          onClick={handleNewProducts}
+        className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
+          viewer === "New" && "bg-black text-green-500"
+        }`}          onClick={handleNewProducts}
         >
           New
         </button>
         <button
-          className="border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500"
-          onClick={handleUsedProducts}
+        className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
+          viewer === "UK Used" && "bg-black text-green-500"
+        }`}          onClick={handleUsedProducts}
         >
           UK Used
         </button>

@@ -25,7 +25,7 @@ const Hero = () => {
         </h2>
         <button className="py-2 px-2 border-2 border-black rounded-xl text-white bg-black text-lg lg:text-2xl subpixel-antialiased">
           <a
-            href="https://web.whatsapp.com/send/?phone=2348134864048&text&type=phone_number"
+            href="https://wa.me/2348134864048"
             target="_blank"
             rel="noreferrer"
           >

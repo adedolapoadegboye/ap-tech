@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 
-const IpadFilter = (props) => {
+const IPhoneFilter = (props) => {
   const {
     setAll,
-    setPro,
-    setAir,
-    setNormal,
-    setMini,
-    setTwentyTwo,
-    setTwentyOne,
-    setTwenty,
-    setNineteen,
+    setSeries15,
+    setSeries14,
+    setSeries13,
+    setSeries12,
+    setSeries11,
+    setSeriesx,
+    setSE,
   } = props;
 
   const [activeButton, setActiveButton] = useState("All");
@@ -18,14 +17,13 @@ const IpadFilter = (props) => {
   const handleFilter = (filterFunction, buttonName) => {
     // Set all buttons to false
     setAll(false);
-    setPro(false);
-    setAir(false);
-    setNormal(false);
-    setMini(false);
-    setTwentyTwo(false);
-    setTwentyOne(false);
-    setTwenty(false);
-    setNineteen(false);
+    setSeries15(false);
+    setSeries14(false);
+    setSeries13(false);
+    setSeries12(false);
+    setSeries11(false);
+    setSeriesx(false);
+    setSE(false);
 
     // Call the corresponding filter function
     filterFunction(true);
@@ -46,67 +44,59 @@ const IpadFilter = (props) => {
       </button>
       <button
         className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
-          activeButton === "iPad Pro" && "bg-black text-green-500"
+          activeButton === "Series 15" && "bg-black text-green-500"
         }`}
-        onClick={() => handleFilter(setPro, "iPad Pro")}
+        onClick={() => handleFilter(setSeries15, "Series 15")}
       >
-        iPad Pro
+        Series 15
       </button>
       <button
         className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
-          activeButton === "iPad Air" && "bg-black text-green-500"
+          activeButton === "Series 14" && "bg-black text-green-500"
         }`}
-        onClick={() => handleFilter(setAir, "iPad Air")}
+        onClick={() => handleFilter(setSeries14, "Series 14")}
       >
-        iPad Air
+        Series 14
       </button>
       <button
         className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
-          activeButton === "iPad" && "bg-black text-green-500"
+          activeButton === "Series 13" && "bg-black text-green-500"
         }`}
-        onClick={() => handleFilter(setNormal, "iPad")}
+        onClick={() => handleFilter(setSeries13, "Series 13")}
       >
-        iPad
+        Series 13
       </button>
       <button
         className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
-          activeButton === "iPad Mini" && "bg-black text-green-500"
+          activeButton === "Series 12" && "bg-black text-green-500"
         }`}
-        onClick={() => handleFilter(setMini, "iPad Mini")}
+        onClick={() => handleFilter(setSeries12, "Series 12")}
       >
-        iPad Mini
+        Series 12
       </button>
       <button
         className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
-          activeButton === "iPad 2022" && "bg-black text-green-500"
+          activeButton === "Series 11" && "bg-black text-green-500"
         }`}
-        onClick={() => handleFilter(setTwentyTwo, "iPad 2022")}
+        onClick={() => handleFilter(setSeries11, "Series 11")}
       >
-        iPad 2022
+        Series 11
       </button>
       <button
         className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
-          activeButton === "iPad 2021" && "bg-black text-green-500"
+          activeButton === "X Series" && "bg-black text-green-500"
         }`}
-        onClick={() => handleFilter(setTwentyOne, "iPad 2021")}
+        onClick={() => handleFilter(setSeriesx, "Series X")}
       >
-        iPad 2021
+        X Series
       </button>
       <button
         className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
-          activeButton === "iPad 2020" && "bg-black text-green-500"
+          activeButton === "SE Series" && "bg-black text-green-500"
         }`}
-        onClick={() => handleFilter(setTwenty, "iPad 2020")}
+        onClick={() => handleFilter(setSE, "Series SE")}
       >
-        iPad 2020
-      </button>
-      <button
-        className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
-          activeButton === "iPad 2019" && "bg-black text-green-500"
-        }`}
-        onClick={() => handleFilter(setNineteen, "iPad 2019")}
-      >
-        iPad 2019
+        SE Series
       </button>
       {/* Repeat the pattern for other buttons */}
       {/* ... */}
@@ -114,4 +104,5 @@ const IpadFilter = (props) => {
   );
 };
 
-export default IpadFilter;
+export default IPhoneFilter;
+

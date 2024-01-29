@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const OthersFilter = (props) => {
   const {
@@ -11,122 +11,85 @@ const OthersFilter = (props) => {
     setSpeakers,
   } = props;
 
-  const handleAllFilter = () => {
-    setAll(true);
-    setStarlinks(false);
-    setChargers(false);
-    setCases(false);
-    setPencils(false);
-    setBands(false);
-    setSpeakers(false);
-  };
+  const [activeButton, setActiveButton] = useState("All");
 
-  const handleStarlinkFilter = () => {
-    setAll(false);
-    setStarlinks(true);
-    setChargers(false);
-    setCases(false);
-    setPencils(false);
-    setBands(false);
-    setSpeakers(false);
-  };
-
-  const handleChargersFilter = () => {
-    setAll(false);
-    setStarlinks(false);
-    setChargers(true);
-    setCases(false);
-    setPencils(false);
-    setBands(false);
-    setSpeakers(false);
-  };
-
-  const handleCasesFilter = () => {
-    setAll(false);
-    setStarlinks(false);
-    setChargers(false);
-    setCases(true);
-    setPencils(false);
-    setBands(false);
-    setSpeakers(false);
-  };
-
-  const handlePencilsFilter = () => {
-    setAll(false);
-    setStarlinks(false);
-    setChargers(false);
-    setCases(false);
-    setPencils(true);
-    setBands(false);
-    setSpeakers(false);
-
-  };
-
-  const handleBandsFilter = () => {
-    setAll(false);
-    setStarlinks(false);
-    setChargers(false);
-    setCases(false);
-    setPencils(false);
-    setBands(true);
-    setSpeakers(false);
-  };
-
-  const handleSpeakerFilter = () => {
+  const handleFilter = (filterFunction, buttonName) => {
+    // Set all buttons to false
     setAll(false);
     setStarlinks(false);
     setChargers(false);
     setCases(false);
     setPencils(false);
     setBands(false);
-    setSpeakers(true);
+    setSpeakers(false);
+
+    // Call the corresponding filter function
+    filterFunction(true);
+
+    // Update the active button
+    setActiveButton(buttonName);
   };
 
   return (
     <div className="grid grid-cols-4 lg:flex lg:justify-center gap-4 lg:gap-8">
       <button
-        className="border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500"
-        onClick={handleAllFilter}
+        className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
+          activeButton === "All" && "bg-black text-green-500"
+        }`}
+        onClick={() => handleFilter(setAll, "All")}
       >
         All
       </button>
       <button
-        className="border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500"
-        onClick={handleStarlinkFilter}
+        className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
+          activeButton === "Starlink" && "bg-black text-green-500"
+        }`}
+        onClick={() => handleFilter(setStarlinks, "Starlink")}
       >
         Starlink
       </button>
       <button
-        className="border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500"
-        onClick={handleChargersFilter}
+        className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
+          activeButton === "Chargers" && "bg-black text-green-500"
+        }`}
+        onClick={() => handleFilter(setChargers, "Chargers")}
       >
         Chargers
       </button>
       <button
-        className="border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500"
-        onClick={handleCasesFilter}
+        className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
+          activeButton === "Cases" && "bg-black text-green-500"
+        }`}
+        onClick={() => handleFilter(setCases, "Cases")}
       >
         Cases
       </button>
-
       <button
-        className="border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500"
-        onClick={handlePencilsFilter}
+        className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
+          activeButton === "Apple Pencils" && "bg-black text-green-500"
+        }`}
+        onClick={() => handleFilter(setPencils, "Apple Pencils")}
       >
-        Pencils
+        Apple Pencils
       </button>
       <button
-        className="border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500"
-        onClick={handleBandsFilter}
+        className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
+          activeButton === "Bands" && "bg-black text-green-500"
+        }`}
+        onClick={() => handleFilter(setBands, "Bands")}
       >
         Bands
       </button>
       <button
-        className="border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500"
-        onClick={handleSpeakerFilter}
+        className={`border-2 border-black rounded-2xl px-2 py-2 hover:bg-black hover:scale-110 hover:text-green-500 ${
+          activeButton === "Speakers" && "bg-black text-green-500"
+        }`}
+        onClick={() => handleFilter(setSpeakers, "Speakers")}
       >
         Speakers
       </button>
+      {/* Repeat the pattern for other buttons */}
+      {/* ... */}
     </div>
   );
 };

@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from "react";
-import iwatch from "../images/flashsale1.jpg";
-import iphone from "../images/flashsale2-1.jpg";
-import speaker from "../images/flashsale3.jpg";
-import powerbank from "../images/flashsale4.jpg";
-import earpod from "../images/flashsale5.jpg";
-import charger from "../images/flashsale6.jpg";
 
 const ProductAdvert = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const images = [iwatch, iphone, speaker, powerbank, earpod, charger];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -55,7 +48,7 @@ const ProductAdvert = () => {
             className="flex flex-col justify-start gap-4 lg:gap-8 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl"
           >
             <img
-              src={images[index]}
+              src={item.image}
               alt={item["name"]}
               className="rounded-2xl"
             />

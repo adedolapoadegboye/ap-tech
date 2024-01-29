@@ -1,34 +1,5 @@
 import React, { useEffect, useState } from "react";
 import BounceLoader from "react-spinners/ClipLoader";
-import appleipadpro2022 from "../images/products/ipad/apple-ipad-pro-2022.jpeg";
-import appleipadpro112022 from "../images/products/ipad/apple-ipad-pro-11-2022.jpeg";
-import appleipad102022 from "../images/products/ipad/apple-ipad-10-2022.jpeg";
-import appleipadair2022 from "../images/products/ipad/apple-ipad-air-2022.jpeg";
-import appleipadmini2021 from "../images/products/ipad/apple-ipad-mini-2021.jpeg";
-import appleipad102021 from "../images/products/ipad/apple-ipad-10-2021.jpeg";
-import appleipadpro1292021 from "../images/products/ipad/apple-ipad-pro-129-2021.jpeg";
-import appleipadpro112021 from "../images/products/ipad/apple-ipad-pro-11-2021.jpeg";
-import appleipadair2020 from "../images/products/ipad/apple-ipad-air-2022.jpeg";
-import appleipadpro122020 from "../images/products/ipad/apple-ipad-pro-12-2020.jpeg";
-import appleipadpro112020 from "../images/products/ipad/apple-ipad-pro-11-2020.jpeg";
-import appleipadair32019 from "../images/products/ipad/apple-ipad-air3-2019.jpeg";
-import appleipadmini2019 from "../images/products/ipad/apple-ipad-air3-2019.jpeg";
-
-const images = [
-  appleipadpro2022,
-  appleipadpro112022,
-  appleipad102022,
-  appleipadair2022,
-  appleipadmini2021,
-  appleipad102021,
-  appleipadpro1292021,
-  appleipadpro112021,
-  appleipadair2020,
-  appleipadpro122020,
-  appleipadpro112020,
-  appleipadair32019,
-  appleipadmini2019,
-];
 
 const ProductPageIpad = (props) => {
   const [data, setData] = useState(null);
@@ -127,7 +98,7 @@ const ProductPageIpad = (props) => {
             className="flex flex-col justify-start gap-4 lg:gap-8 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl"
           >
             <img
-              src={images[index]}
+              src={item.image}
               alt={item["name"]}
               className="rounded-2xl"
             />
@@ -153,9 +124,10 @@ const ProductPageIpad = (props) => {
                   Screen width: {item.screen} inches
                 </h3>
               </div>
-              <h3 className="flex justify-left text-xs md:text-sm lg:text-md font-light pt-2">
+              <h3 className="flex justify-left text-xs md:text-sm lg:text-md font-normal pt-2">
                 <span>&#8358;</span>
-                {item["price"]}
+                {item["lowprice"]} - <>&nbsp;</><span>&#8358;</span>
+                {item["highprice"]}
               </h3>
             </a>
           </div>

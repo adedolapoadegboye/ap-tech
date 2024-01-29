@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import mac from "../images/products/mac/mac.jpeg";
 import BounceLoader from "react-spinners/ClipLoader";
 
 const ProductPageMacPro = (props) => {
@@ -68,7 +67,7 @@ const ProductPageMacPro = (props) => {
             key={index}
             className="flex flex-col justify-start gap-4 lg:gap-8 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl"
           >
-            <img src={mac} alt={item["name"]} className="rounded-2xl" />
+            <img src={item.image} alt={item["name"]} className="rounded-2xl" />
             <a
               href="https://wa.me/2348134864048"
               target="_blank"
@@ -94,9 +93,10 @@ const ProductPageMacPro = (props) => {
                   Screen width: {item.screen} inches
                 </h3>
               </div>
-              <h3 className="flex justify-left text-xs md:text-sm lg:text-md font-light pt-2">
+              <h3 className="flex justify-left text-xs md:text-sm lg:text-md font-normal pt-2">
                 <span>&#8358;</span>
-                {item["price"]}
+                {item["lowprice"]} - <>&nbsp;</><span>&#8358;</span>
+                {item["highprice"]}
               </h3>
             </a>
           </div>

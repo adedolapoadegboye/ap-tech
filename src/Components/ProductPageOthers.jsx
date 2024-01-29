@@ -1,28 +1,6 @@
 import React, { useEffect, useState } from "react";
-import starlink from "../images/products/others/starlink.jpeg";
-import pencil from "../images/products/others/Apple Pencil.jpeg";
-import iphone_charger from "../images/products/others/All iPhone Chargers.jpeg";
-import iwatch_charger from "../images/products/others/All iWatch Chargers.jpeg";
-import silicone_case from "../images/products/others/iPhone Silicone Case with MagSafe.png";
-import clear_case from "../images/products/others/iPhone Clear Case with MagSafe.png";
-import sport_band from "../images/products/others/iWatch Sport Bands.png";
-import magnetic_band from "../images/products/others/iWatch Magnetic Bands.png";
-import speaker from "../images/products/others/JBLFLIP6.webp";
 import BounceLoader from "react-spinners/ClipLoader";
 
-const images = [
-  starlink,
-  pencil,
-  pencil,
-  pencil,
-  iphone_charger,
-  iwatch_charger,
-  silicone_case,
-  clear_case,
-  sport_band,
-  magnetic_band,
-  speaker,
-];
 const ProductPageOthers = (props) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -93,10 +71,10 @@ const ProductPageOthers = (props) => {
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col justify-center gap-2 border-2 py-3 lg:py-6 px-2 lg:px-4 bg-gray-900 text-white rounded-2xl"
+            className="flex flex-col justify-center gap-4 lg:gap-8 border-2 py-3 lg:py-6 px-3 lg:px-6 bg-gray-900 text-white rounded-2xl"
           >
             <img
-              src={images[index]}
+              src={item.image}
               alt={item["name"]}
               className="rounded-2xl"
             />
@@ -105,14 +83,14 @@ const ProductPageOthers = (props) => {
               target="_blank"
               rel="noreferrer"
             >
-              <h2 className="navbar flex justify-center font-bold text-md lg:text-lg">
+              <h2 className="navbar font-bold text-md lg:text-lg">
                 {item["name"]}
               </h2>
-              <div className="flex flex-col">
-              </div>
-              <h3 className="flex justify-center text-sm md:text-md lg:text-lg font-light pt-2">
+
+              <h3 className="text-xs md:text-sm lg:text-md font-normal pt-2">
                 <span>&#8358;</span>
-                {item["price"]}
+                {item["lowprice"]} - <>&nbsp;</><span>&#8358;</span>
+                {item["highprice"]}
               </h3>
             </a>
           </div>
