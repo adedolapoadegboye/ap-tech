@@ -1,10 +1,18 @@
-import { IoIosNotifications } from "react-icons/io";
-import { CiSearch } from "react-icons/ci";
-import { FiShoppingCart } from "react-icons/fi";
+import {
+  // IoIosNotifications,
+  // IoLogoFacebook,
+  IoLogoInstagram,
+  IoLogoSnapchat,
+} from "react-icons/io";
+// import { CiSearch } from "react-icons/ci";
+// import { FiShoppingCart } from "react-icons/fi";
 import { FiMenu } from "react-icons/fi";
 import Menu from "../Subcomponents/Menu";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { BsTwitterX } from "react-icons/bs";
+import { FaTiktok } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -14,7 +22,7 @@ const Navbar = () => {
   };
   return (
     <div className="flex justify-between px-[calc(5vw)] py-[calc(2vh)] border-b-2 border-black">
-      <div className="flex ap-tech text-2xl md:text-3xl lg:text-4xl text-slate-900">
+      <div className="flex ap-tech text-3xl md:text-4xl lg:text-5xl text-slate-900">
         <h1>AP Tech</h1>
       </div>
       <div className="navbar hidden lg:flex lg:gap-x-6 pt-2 font-bold">
@@ -116,6 +124,71 @@ const Navbar = () => {
         </NavLink>{" "}
       </div>
       <div className="flex gap-x-4 relative z-0">
+        <button
+          className="
+            hover:scale-150 hover:cursor-pointer hidden lg:block"
+        >
+          <a
+            href="https://wa.me/2348134864048"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden lg:block hover:scale-100 hover:cursor-pointer"
+          >
+            <IoLogoWhatsapp color="black" size={20} />
+          </a>
+        </button>
+        <button
+          className="
+            hover:scale-150 hover:cursor-pointer hidden lg:block"
+        >
+          <a
+            href="https://www.instagram.com/ap__tech/"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden lg:block hover:scale-100 hover:cursor-pointer"
+          >
+            <IoLogoInstagram color="black" size={20} />
+          </a>
+        </button>
+        <button className="hover:scale-150 hover:cursor-pointer hidden lg:block">
+          <a
+            href="https://twitter.com/ap__tech/"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden lg:block hover:scale-100 hover:cursor-pointer"
+          >
+            <BsTwitterX color="black" size={20} />
+          </a>
+        </button>
+        <button className="hover:scale-150 hover:cursor-pointer hidden lg:block">
+          <a
+            href="https://www.snapchat.com/add/apalando_raman/"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden lg:block hover:scale-100 hover:cursor-pointer"
+          >
+            <IoLogoSnapchat color="black" size={20} />
+          </a>
+        </button>
+        <button className="hover:scale-150 hover:cursor-pointer hidden lg:block">
+          <a
+            href="https://www.tiktok.com/@ap_tech"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden lg:block hover:scale-100 hover:cursor-pointer"
+          >
+            <FaTiktok color="black" size={20} />
+          </a>
+        </button>
+        <button
+          className="hover:scale-150 hover:cursor-pointer lg:hidden"
+          onClick={handleMenuToggle}
+        >
+          <FiMenu color="black" size={20} />
+        </button>
+          <Menu isOpen={isMenuOpen} onClose={handleMenuToggle} />
+      </div>
+      {/* <div className="flex gap-x-4 relative z-0">
         <button className="hidden lg:block hover:scale-100 hover:cursor-pointer">
           <IoIosNotifications color="black" size={20} />
         </button>
@@ -135,7 +208,7 @@ const Navbar = () => {
           <FiMenu color="black" size={20} />
         </button>
         <Menu isOpen={isMenuOpen} onClose={handleMenuToggle} />
-      </div>
+      </div> */}
     </div>
   );
 };

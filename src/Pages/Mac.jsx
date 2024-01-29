@@ -5,8 +5,8 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import ProductPageMacPro from "../Components/ProductPageMacPro";
 import ProductPageMacAir from "../Components/ProductPageMacAir";
-import ContactForm from "../Components/Form";
-import Contact from "../Components/Contact";
+// import ContactForm from "../Components/Form";
+// import Contact from "../Components/Contact";
 import ProductHeroMac from "../Components/Product-hero-mac";
 import MacProFilter from "../Subcomponents/MacProFilter";
 import MacAirFilter from "../Subcomponents/MacAirFilter";
@@ -55,14 +55,14 @@ const Mac = () => {
         <MacAirFilter setAll={setAllAir} setSmallScreen={setSmallScreenAir} setBigScreen={setBigScreenAir} setM1={setM1} setM2={setM2} setIntel={setIntel}/>
         <ProductPageMacAir all={allAir} smallScreen={smallScreenAir} bigScreen={bigScreenAir} M1={M1} M2={M2} intel={intel} />
       </div>
-      <div className="px-[calc(5vw)] flex justify-center pb-[calc(6vh)]">
+      {/* <div className="px-[calc(5vw)] flex justify-center pb-[calc(6vh)]">
         <div className="static z-0 px-2 h-full w-full md:w-1/2 rounded-2xl">
           <Contact />
         </div>
         <div className="static z-0 px-2 hidden">
           <ContactForm />
         </div>
-      </div>
+      </div> */}
       <div className="static z-0 pt-[calc(vh)] px-2 bg-gray-900">
         <Footer />
       </div>

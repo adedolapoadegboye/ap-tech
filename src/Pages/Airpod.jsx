@@ -6,8 +6,8 @@ import Footer from "../Components/Footer";
 import ProductHero from "../Components/Product-hero-earpod";
 import ProductPageAirpod from "../Components/ProductPageAirpod";
 // import UsedProductPageEarpod from "../Components/UsedProductPageEarpod";
-import ContactForm from "../Components/Form";
-import Contact from "../Components/Contact";
+// import ContactForm from "../Components/Form";
+// import Contact from "../Components/Contact";
 import AirpodFilter from "../Subcomponents/AirpodFilter"
 
 const Airpod = () => {
@@ -45,14 +45,14 @@ const Airpod = () => {
         </h2>
         <UsedProductPageEarpod />
       </div> */}
-      <div className="px-[calc(5vw)] flex justify-center pb-[calc(6vh)]">
+      {/* <div className="px-[calc(5vw)] flex justify-center pb-[calc(6vh)]">
         <div className="static z-0 px-2 h-full w-full md:w-1/2 rounded-2xl">
           <Contact />
         </div>
         <div className="static z-0 px-2 hidden">
           <ContactForm />
         </div>
-      </div>
+      </div> */}
       <div className="static z-0 pt-[calc(vh)] px-2 bg-gray-900">
         <Footer />
       </div>

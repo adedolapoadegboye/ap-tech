@@ -5,8 +5,8 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import ProductHeroWatch from "../Components/Product-hero-watch";
 import UsedProductPageIwatch from "../Components/UsedProductPageIwatch";
-import ContactForm from "../Components/Form";
-import Contact from "../Components/Contact";
+// import ContactForm from "../Components/Form";
+// import Contact from "../Components/Contact";
 import ProductPageIwatch from "../Components/ProductPageIwatch";
 import IWatchFilter from "../Subcomponents/IWatchFilter";
 
@@ -133,14 +133,14 @@ const Watch = () => {
         </button>
       </div>
       <div>{viewSelector()}</div>
-      <div className="px-[calc(5vw)] flex justify-center pb-[calc(6vh)]">
+      {/* <div className="px-[calc(5vw)] flex justify-center pb-[calc(6vh)]">
         <div className="static z-0 px-2 h-full w-full md:w-1/2 rounded-2xl">
           <Contact />
         </div>
         <div className="static z-0 px-2 hidden">
           <ContactForm />
         </div>
-      </div>
+      </div> */}
       <div className="static z-0 pt-[calc(vh)] px-2 bg-gray-900">
         <Footer />
       </div>

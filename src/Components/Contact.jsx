@@ -15,8 +15,8 @@ const Contact = () => {
         <div>
           <h1 className="text-2xl lg:text-4xl text-center">
             {" "}
-            We don't just sell gadgets,
-            <br></br> we sell Happiness!
+            AP tech is your #1 tech store
+            <br></br> contact us today!
           </h1>
           {/* <h2 className="text-center text-xl lg:text-2xl">
             {" "}
@@ -43,7 +43,7 @@ const Contact = () => {
         <div className="flex w-full h-full gap-6">
           <FaWhatsapp size={30} />
           <a
-            href="https://web.whatsapp.com/send/?phone=2348134864048&text&type=phone_number&app_absent=0"
+          href="https://wa.me/2348134864048"
             target="_blank"
             rel="noreferrer"
           >

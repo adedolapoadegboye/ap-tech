@@ -2,7 +2,7 @@ import "../App.css";
 import ApTechEssentials from "../Components/Ap-Tech-Essentials";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
-import ContactForm from "../Components/Form";
+// import ContactForm from "../Components/Form";
 import FromTheCEO from "../Components/From-the-CEO";
 import HeaderAnnouncement from "../Components/Header-Announcement";
 import Hero from "../Components/Hero";
@@ -34,23 +34,20 @@ function Home() {
       </div>
       <div className="static flex flex-col gap-y-10 lg:gap-y-10 z-0 pb-[calc(6vh)] px-[calc(5vw)]">
         <h1 className="font-black text-3xl lg:text-6xl w-full justify-center text-center flash-sale-animation">
-          January Flash Sales!!!
+          Clearance Sales!!!
         </h1>
         <ProductAdvert />
       </div>
       <div className="static z-0 pb-[calc(6vh)] hidden px-[calc(5vw)]">
         <FromTheCEO />
       </div>
-      <div className="hidden lg:flex lg:flex-row px-[calc(5vw)] pb-[calc(6vh)] z-0 w-full h-full justify-center gap-6">
+      <div className="sm:flex sm:flex-col sm:gap-10 lg:flex lg:flex-row px-[calc(5vw)] pb-[calc(6vh)] z-0 w-full h-full justify-center">
         <div className="static z-0 h-full w-full rounded-2xl">
           <Contact />
         </div>
-        <div className="static z-0 h-full w-full bg-gray-900 rounded-2xl">
+        <div className="static z-0 h-full w-full bg-gray-900 rounded-2xl hidden lg:flex">
           <Reviews />
         </div>
-      </div>
-      <div className="static z-0 pb-[calc(6vh)] hidden px-[calc(5vw)]">
-        <ContactForm />
       </div>
       <div className="static z-0 pb-[calc(0vh)] px-2 bg-gray-900">
         <Footer />
