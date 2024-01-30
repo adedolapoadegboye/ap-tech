@@ -11,7 +11,7 @@ const ProductAdvert = () => {
       try {
         // Make a fetch API call
         const responseData = await fetch(
-          "http://localhost:4000/flashsales/data"
+          "http://35.160.225.128:4000/flashsales/data"
         );
         const data = await responseData.json();
         console.log(data);

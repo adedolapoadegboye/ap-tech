@@ -71,7 +71,7 @@ const ProductPageIwatch = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let apiLink = `http://localhost:4000/iwatch/${api}`;
+        let apiLink = `http://35.160.225.128:4000/iwatch/${api}`;
         console.log(apiLink);
         // Make a fetch API call
         const responseData = await fetch(apiLink);

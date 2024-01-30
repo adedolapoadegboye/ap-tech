@@ -31,7 +31,7 @@ const ProductPageOthers = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let apiLink = `http://localhost:4000/others/${api}`;
+        let apiLink = `http://35.160.225.128:4000/others/${api}`;
         console.log(apiLink);
         // Make a fetch API call
         const responseData = await fetch(apiLink);
