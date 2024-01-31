@@ -53,7 +53,7 @@ const Reviews = () => {
           autoPlay
           loop
           muted
-          className="w-full h-[400px] lg:h-[500px] rounded-2xl"
+          className="w-full h-[400px] lg:h-[500px] rounded-2xl hidden lg:flex"
           src={videoDB[nextVideo.current]}
         >
           <source src={videoDB[nextVideo.current]} type="video/mp4" />
