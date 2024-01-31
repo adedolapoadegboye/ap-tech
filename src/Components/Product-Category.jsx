@@ -41,7 +41,7 @@ const ProductCategory = () => {
           </div>
           <div className="relative">
             <img src={earpods} alt="Earpods" className="h-[300px] lg:h-[400px] w-full rounded-xl static"></img>
-            <Link to="/airpod" className="w-full h-full absolute inset-x-0 bottom-0 top-4 text-white font-extrabold text-3xl">Earpods</Link>
+            <Link to="/airpod" className="w-full h-full absolute inset-x-0 bottom-0 top-4 text-white font-extrabold text-3xl">Airpods</Link>
           </div>
           <div className="relative">
             <img src={iPad} alt="Accessories" className="h-[300px] lg:h-[400px] w-full rounded-xl static"></img>

@@ -37,7 +37,7 @@ const Watch = () => {
         <div className="static z-0 px-[calc(5vw)] flex flex-col gap-10 py-[calc(5vh)]">
           <h2 className="navbar text-extrabold text-2xl md:text-4xl lg:text-6xl tracking-tighter flex justify-center items-center h-full w-full text-gray-900">
             {" "}
-            Browse Our {viewer} iWatches{" "}
+            Shop Our {viewer} iWatches{" "}
           </h2>
           <IWatchFilter
             setAll={setAll}
