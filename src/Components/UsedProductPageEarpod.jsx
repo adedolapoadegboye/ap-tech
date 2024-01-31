@@ -12,8 +12,8 @@ const UsedProductPageAirpod = () => {
     const fetchData = async () => {
       try {
         // Make a fetch API call
-        const responseData = await fetch('http://35.160.225.128:4000/usedearpod/data');
-        const responseImage = await fetch('http://35.160.225.128:4000/usedearpod/images');
+        const responseData = await fetch('https://aptech-0e3dce2c8878.herokuapp.com/usedearpod/data');
+        const responseImage = await fetch('https://aptech-0e3dce2c8878.herokuapp.com/images');
         const data = await responseData.json();
         const img = await responseImage.json();
         console.log(data)

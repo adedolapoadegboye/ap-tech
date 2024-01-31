@@ -45,7 +45,7 @@ const ProductPageIphone = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let apiLink = `http://35.160.225.128:4000/iphone/${api}`;
+        let apiLink = `https://aptech-0e3dce2c8878.herokuapp.com/iphone/${api}`;
         console.log(apiLink);
         // Make a fetch API call
         const responseData = await fetch(apiLink);
