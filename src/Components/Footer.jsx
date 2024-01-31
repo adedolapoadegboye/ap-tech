@@ -28,7 +28,7 @@ const Footer = () => {
             Read more ...
         </Link>
       </div>
-      <div className="border-b-2 pb-4 lg:border-b-0 lg:border-e-2 border-gray-700">
+      <div className="border-b-2 pb-4 lg:border-b-0 lg:border-e-2 border-gray-700 text-gray-400">
         <h1 className="nav text-sm text-gray-400">SOCIAL LINKS</h1>
         <br></br>
         <div className="flex gap-10 justify-start items-center">
@@ -94,7 +94,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="border-b-2 pb-4 lg:px-4 lg:border-b-0 lg:border-e-2 border-gray-700">
+      <div className="border-b-2 pb-4 lg:px-4 lg:border-b-0 lg:border-e-2 border-gray-700 text-gray-400">
         <h1 className="nav text-sm text-gray-400">QUICK LINKS</h1>
         <br></br>
         <ul>
@@ -130,7 +130,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="border-b-2 pb-4 lg:px-4 lg:border-b-0 border-gray-700">
+      <div className="border-b-2 pb-4 lg:px-4 lg:border-b-0 border-gray-700 text-gray-400">
         <h1 className="nav text-sm text-gray-400 flex gap-4 justify-start items-center">
           <FaStore size={15} />
           STORE ADDRESS

@@ -10,7 +10,7 @@ import {
 
 const Contact = () => {
   return (
-    <div className="navbar flex flex-col h-full w-full justify-center items-center py-12 bg-gray-900 text-white px-2 rounded-2xl">
+    <div className="navbar flex flex-col h-full w-full justify-center items-center py-12 bg-gray-900 text-white px-2 lg:px-6 rounded-2xl">
       <div className="font-normal text-md flex flex-col w-full h-full gap-6">
         <div>
           <h1 className="text-2xl lg:text-4xl text-center">
