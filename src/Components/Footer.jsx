@@ -48,7 +48,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <span className="text-sm font-normal">wa.me/2348134864048</span>{" "}
+            <span className="text-sm font-normal text-gray-400">wa.me/2348134864048</span>{" "}
           </a>
         </div>
         <div className="flex gap-10 justify-start items-center">
@@ -58,7 +58,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <span className="text-sm font-normal">@ap__tech</span>{" "}
+            <span className="text-sm font-normal text-gray-400">@ap__tech</span>{" "}
           </a>
         </div>
         <div className="flex gap-10 justify-start items-center">
@@ -80,7 +80,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <span className="text-sm font-normal">@ap_tech</span>{" "}
+            <span className="text-sm font-normal text-gray-400">@ap_tech</span>{" "}
           </a>
         </div>
         <div className="flex gap-10 justify-start items-center">
@@ -90,7 +90,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <span className="text-sm font-normal">admin@aptechstore.com</span>{" "}
+            <span className="text-sm font-normal text-gray-400">admin@aptechstore.com</span>{" "}
           </a>
         </div>
       </div>
@@ -99,32 +99,32 @@ const Footer = () => {
         <br></br>
         <ul>
           <li>
-            <Link to="/iphone" className="font-normal text-sm">
+            <Link to="/iphone" className="font-normal text-sm text-gray-400">
               - iPhones
             </Link>
           </li>
           <li>
-            <Link to="/iwatch" className="font-normal text-sm">
+            <Link to="/iwatch" className="font-normal text-sm text-gray-400">
               - iWatches
             </Link>
           </li>
           <li>
-            <Link to="/mac" className="font-normal text-sm">
+            <Link to="/mac" className="font-normal text-sm text-gray-400">
               - MacBooks
             </Link>
           </li>
           <li>
-            <Link to="/airpod" className="font-normal text-sm">
+            <Link to="/airpod" className="font-normal text-sm text-gray-400">
               - Airpods
             </Link>
           </li>
           <li>
-            <Link to="/ipad" className="font-normal text-sm">
+            <Link to="/ipad" className="font-normal text-sm text-gray-400">
               - iPads
             </Link>
           </li>
           <li>
-            <Link to="/others" className="font-normal text-sm">
+            <Link to="/others" className="font-normal text-gray-400 text-sm">
               - Others
             </Link>
           </li>
