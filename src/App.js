@@ -1,4 +1,5 @@
 import "./App.css";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Phone from "./Pages/iPhone";
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className="w-screen h-fit text-black bg-white font-bold text-center">
       <Routes>
-        <Route path="/">
+        <Route path="https://aptechstore.com/">
           <Route index element={<Home />} />
           <Route path="iphone" element={<Phone />} />
           <Route path="iwatch" element={<Watch />} />
@@ -27,6 +28,7 @@ function App() {
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
+      <SpeedInsights />
     </div>
   );
 }
