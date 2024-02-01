@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="w-screen h-fit text-black bg-white font-bold text-center">
       <Routes>
-        <Route path="https://aptechstore.com/">
+        <Route path="/">
           <Route index element={<Home />} />
           <Route path="iphone" element={<Phone />} />
           <Route path="iwatch" element={<Watch />} />
